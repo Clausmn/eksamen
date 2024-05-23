@@ -1,1 +1,312 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Garnlageret-Aarhus Forside</title>
+    <!-- SEO -->
+    <meta name="keywords" content="Garn, Salg af garn, strik, strikkepinde,
+     billigt garn, hvor meget garn skal jeg bruge?,
+     garn aarhus, garnlageret">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Garnlageret-Aarhus">
+    <meta property="og:site_name" content="Garnlageret-Aarhus">
+    <meta property="og:description" content="Salg af garn">
+    <meta name="geo.placename" content="Aarhus">
+    <meta name="author" content="Claus Moldt">
+    <!-- description -->
+    <meta name="description" content="Velkommen til Garnlageret Aarhus, her finder du kvalitetsgarn til gode priser">
+    <!-- CSS + JS + Fonts + icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+<body>
+<!-- MENU -->
+ <header>
+<div class="top-bar">
+  <span>Butik i over 30 år</span>
+  <span>Gratis fragt ved køb over 500,-</span>
+  <span>Billig fragt fra 49,-</span>
+  <span>Tlf. +45 9156 6064 (Hverdage 10-13)</span>
+        </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html"><img src="image/nyelogo.png" alt="Garnspecialisten"></a>
+                </div>
+                <div class="soegefunktion">
+                    <input type="text" id="search" placeholder="Søg efter produkter...">
+                    <button onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                </div>
+               <div class="icons">
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+            </nav>
+            <nav class="sub-nav">
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="#">Produkter</a>
+                        <ul class="dropdown-content">
+                            <li><a href="garn.html">Garn</a></li>
+                            <li><a href="tilbehør.html">Tilbehør</a></li>
+                            <li><a href="garnomregner.html">Garnomregner</a></li>
+                            <li><a href="udeafdrift.html">Nyheder</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="opskrifter.html">Opskrifter</a>
+                        <ul class="dropdown-content">
+                            <li><a href="opskrifter.html">Alle opskrifter</a></li>
+                            <li><a href="opskrifter.html">Hæklerier</a></li>
+                            <li><a href="opskrifter.html">Baby</a></li>
+                            <li><a href="opskrifter.html">Børn</a></li>
+                            <li><a href="opskrifter.html">Kvinder</a></li>
+                            <li><a href="opskrifter.html">Mænd</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="udeafdrift.html">Nyheder</a>
+                        <ul class="dropdown-content">
+                            <li><a href="garn.html">Spar 20% på uld</a></li>
+                            <li><a href="garnomregner.html">Garnomregner</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="udeafdrift.html">Garnalternativer</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="garnomregner.html">Garnomregner</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="omos.html">Om os</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+ <!-- HEADER MENU SLUT -->
+ <main>
+<h1 id="garn_overskrift">Tilbehør</h1>
+<h2 id="garn_h2">Denne side er opdelt i forskellige typer tilbehør. Klik på den ønskede kategori for at finde det, du leder efter</h2>
+    <div class="header-container">
+        <h1 id="tilbehørHeader">Strikkepinde og hæklenåle</h1>
+        <h1 id="diverseHeader">Diverse tilbehør</h1>
+        <h1 id="maerkaterHeader">Mærkater til at sy i</h1>
+    </div>
+    <div class="wrapper" id="tilbehørWrapper">
+        <div class="shopping-cards">
+            <!-- Uld produkter -->
+            <article class="product-card">
+              <script src="script.js"></script>
+              <figure>
+                  <img src="image/strikkepindeosv/bambusrundpinde.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Bambusrundpinde</h2>
+                      <p>65,00  DKK</p>
+                     <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Bambus rundpindene er fra Hjertegarn, og de fås i 40, 60 og 80 cm i størrelser fra 3 til 10 mm.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/strikkepindeosv/haeklenale.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Hæklenåle</h2>
+                      <p>35,00  DKK</p>
+                     <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Her finder du hæklenåle fra størrelse 0,6 - 15 mm, i metal eller plastik, alle fra Hjertegarn</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/strikkepindeosv/jumperpinde-fra-hjertegarn.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Jumperpinde fra Hjertegarn</h2>
+                      <p>45,00 DKK</p>
+                     <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Her kan du vælge dine helt almindelige strikkepinde fra Hjertegarn, 30 cm lange.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/strikkepindeosv/rundpinde-hjertegarn.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Rundpinde Hjertegarn</h2>
+                      <p>59,00  DKK</p>
+                     <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Her er udvalget af rundpinde fra Hjertegarn. Husk at vælge den rigtige længde.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/strikkepindeosv/strompepinde-trae-og-bambus.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Strømpepinde træ og bambus</h2>
+                      <p>55,00  DKK</p>
+                     <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Her finder du strømpepinde i bambus og træ. Bambuspindene er 20 cm lange.
+                          <br><br>Træpindene er 15 cm lange, produceret i Danmark af dansk skovtræ (Jens Wanell).</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+      </div>
+  </div>
+  <!-- Diverse tilbehør -->
+    <div class="wrapper hidden" id="diverseWrapper">
+        <div class="shopping-cards">
+           <!-- diverse produkter -->
+      <article class="product-card">
+          <figure>
+              <img src="image/diverse/eucalan-100-ml.webp" alt="Produkt">
+              <figcaption class="card-content">
+                  <h2>Eucalan 100 ml</h2>
+                  <p>78,00  DKK</p>
+                 <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Uparfumeret vaskemiddel til dit strik, skal ikke skylles ud.
+                          <br><br>Kan bruges både til hånd- og maskinvask.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                  <button>Tilføj til kurv</button>
+              </figcaption>
+          </figure>
+      </article>
+      <article class="product-card">
+        <figure>
+            <img src="image/diverse/maskemarkorer.webp" alt="Produkt">
+            <figcaption class="card-content">
+                <h2>Maskemarkører</h2>
+                <p>49,00  DKK</p>
+               <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Forskellige slags maskemarkører</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                <button>Tilføj til kurv</button>
+            </figcaption>
+        </figure>
+    </article>
+    <article class="product-card">
+      <figure>
+          <img src="image/diverse/maskewirer.webp" alt="Produkt">
+          <figcaption class="card-content">
+              <h2>Maskewirer</h2>
+              <p>10,00  DKK</p>
+             <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Maskewirer til at lade masker hvile på. 
+                         <br><br> Brug maskewiren fx når masker til ærmer skal hvile. Wiren er lavet af plastik, og sættes på spidsen af pinden, så maskerne nemt kan trækkes over på wiren når du trækker pinden ud. 
+                        <br>Bind en knude på enden af wiren indtil du senere kan trækker maskerne tilbage på pinden på samme måde.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+              <button>Tilføj til kurv</button>
+          </figcaption>
+      </figure>
+  </article>
+        </div>
+    </div>
+     <!-- Mærkater tilbehør -->
+    <div class="wrapper hidden" id="maerkaterWrapper">
+        <div class="shopping-cards">
+            <!-- Mærkater produkter -->
+            <article class="product-card">
+                <figure>
+                    <img src="image/maerkater/maerkater.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Mærkater</h2>
+                        <p>6,00  DKK</p>
+                       <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Her er et lille udvalg af mærkater til at sy i det færdige strikke eller hækletøj.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+    </div>
+ </main>
+ <!-- Footer HTML  -->
+ <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <a href="#">Rosenkrantzgade 31 <br>
+          8000 Aarhus C</a>
+        <p>Tlf. +45 9156 6064</p>
+        <a href="#">Mail: Garnlageret@gmail.com</a>
+        <p>CVR: 31 10 99 06</p>
+      </div>
 
+      <div class="footer-section">
+        <h4>Åbningstider</h4>
+        <p>Mandag: Lukket <br>
+          Tirsdag: 10.00 - 17.30 <br>
+          Onsdag: 10.00 - 17.30 <br>
+          Torsdag: 10.00 - 17.30 <br>
+          Fredag: 10.00 - 17.30 <br>
+          Lørdag: 10.00 - 13.00 <br> <br>
+          
+          Husk vi har lukket mellem jul og nytår</p>
+      </div>
+      <div class="footer-section">
+        <h4>Information</h4>
+        <a href="#">Handelsbetingelser</a>
+        <a href="#">Privat politik</a> <br>
+        <a href="#">Om Garnlageret Aarhus</a>
+      </div>
+      <div class="footer-section">
+        <h4>Produkter</h4>
+        <a href="#">Garn</a> <br>
+        <a href="#">Nyheder</a> <br>
+        <a href="#">Tilbehør</a> <br>
+      </div>
+      <div class="footer-section">
+        <h4>Følg os</h4>
+        <a href="#"><i class="fa fa-facebook"></i> Facebook</a> <br>
+        <a href="https://www.instagram.com/garnlageret.aarhus/"><i class="fa fa-instagram"></i> Instagram</a> <br>
+        <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+      </div>
+    
+    </div>
+  </footer>
+  </body>
+</html>
