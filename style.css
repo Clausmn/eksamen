@@ -1,1 +1,887 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body style */
+body {
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Style af header ikoner */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+/* Style af header top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fbf9f8;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-info span {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style af header navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Style af søgefunktion */
+.soegefunktion {
+    display: flex;
+    align-items: center;
+}
+/* Style af søgefunktion input (søg efter produkter)  */
+.soegefunktion input {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+/* Style af søgefunktion button */
+.soegefunktion button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Style af Ul menu /navigation/  */
+.menu {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap:20px;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+/* Style af undersider i headerens dropdown  */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    margin-top: 5px;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+}
+
+.dropdown-content li {
+    padding: 5px 20px;
+}
+
+.dropdown-content a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu li:hover > .dropdown-content, .dropdown-content li:hover > .dropdown-content {
+    display: block;
+}
+
+/* Style af forsidebanner  */
+/* ---------- Forsidebanner -------- */
+/* ---------- Flexbox -------- */
+ .banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+/* Velkomstbesked i banner */
+  .forsidebanner_p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    right: 53%;
+    text-align: center;
+  }
+  
+ /* Tilbud besked i banner */
+  .forsidebanner_p2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    right: 49.70%;
+  }
+/* Shop tilbud nu knap */
+  .forsidebanner_button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top: 48.5%;
+    right: 72%;
+    padding: 10px 20px;
+    color: #fff; 
+    background-color: #007BFF; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /* Ændrer cursoren ved hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Glatte overgange */
+    text-decoration: none;
+  }
+
+  /* Shop tilbud nu knap Hover-effekt */
+  .forsidebanner_button:hover {
+    background-color: #0056b3; /* Mørkere baggrundsfarve ved hover */
+    transform: scale(1.05); /* Lidt forstørrelse ved hover */
+  }
+  
+  /* Shop tilbud nu knap Fokus-effekt */
+  .forsidebanner_button:focus {
+    outline: none; /* Fjern standard kant ved fokus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blå skygge ved fokus */
+  }
+
+ /* Forside midter tekst og ikoner */
+  .midter-text {
+    text-align: center;
+    padding: 13px;
+    font-weight: bold;
+    border-top: 1px solid #000000;
+    max-width: 100%;
+ /* Flexbox */
+    display: flex;
+    align-items: center; /* Centrerer vertikalt */
+    justify-content: center; /* Centrerer horisontalt */
+    margin: auto; /* Centrerer vandret */
+    margin-top: 70px; 
+}
+
+.midter-text p {
+    margin: 0 60px;
+    font-size: 13px;
+    color: black;
+    opacity: 80%;
+}
+
+/* ---------- Forside tilbud -------- */
+/* ---------- Flexbox + Grid -------- */
+ .outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+
+/* ---------- Forside cards (Uld, Mohair, Bomuld) -------- */
+/* ---------- Flexbox -------- */
+
+.nyheder-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Afstand mellem kortene */
+}
+
+.card-nyheder {
+  position: relative; /* Nødvendig for absolut positionering af teksten */
+  width: 400px; /* Bredde på cards */
+  color: inherit;
+  margin-top: 150px;
+}
+
+.card-nyheder::before {
+  content: ""; /* Tomt pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Mørk skyggefarve med gennemsigtighed */
+  opacity: 0; /* Begynder med 0 opacity */
+  transition: opacity 1s ease; /* Tilføjer en overgangseffekt */
+}
+
+.card-nyheder:hover::before {
+  opacity: 1; /* Gør pseudo-elementet fuldt synligt ved hover (tomt) */
+}
+
+.card-nyheder img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-nyheder p {
+  position: absolute; /* Placerer absolut inde i kortet, så vi kan placere den hvor vi vil */
+  bottom: 0; /* Placerer teksten nederst */
+  left: 50%; /* Centrerer horisontalt */
+  transform: translateX(-50%); /* Justerer for absolut centrering horisontalt */
+  margin: 0;
+  padding: 10px;
+  color: white;
+  width: 100%; /* Sørger for teksten strækker sig over hele bredden af kortet */
+  text-align: center; /* Centrerer teksten horisontalt */
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ---------- Forside cards nyheder -------- */
+/* ---------- Flexbox -------- */
+/* Nyheder overskrift  */
+.section-title {
+  position: absolute; /* absolute positionering så vi kan placere den præcist hvor vi vil */
+  top: 100%;
+  left: 50%;
+  margin-top: 40%;
+  transform: translate(-50%, -50%); /* flytter elementet 50% tilbage både vandret og lodret, så det er perfekt centreret */
+  text-align: center; /* centrerer teksten indeni elementet */
+  padding: 10px 20px; /* tilføjer lidt luft rundt om teksten */
+  font-size: 30px;
+}
+
+.card-container { /* så vi kan placere den præcist hvor vi vil */
+  display: flex; /* Kalder flex */
+  justify-content: center; /* placere containeren i center */
+  gap: 125px; /* tilføjer 125px Afstand mellem kortene */
+  margin-top: 100px; /* Skubber den ned */
+  padding: 150px; /* giver den luft omkring sig */
+  background-color: #fbf9f8; /* baggrundsfarve */
+  
+}
+.card {
+  position: relative; /* relativ positionering */
+  background-color: #fff; /* baggrundsfarve */
+  overflow: hidden; /* skjuler indhold der flyder ud over elementets grænser */
+  width: 400px; /* fast bredde på 400 pixels */
+  text-decoration: none; /* ingen tekstdekoration, f.eks. ingen understregning på links */
+  color: inherit; /* tekstfarven "arves" fra det overordnede element */
+
+}
+.card img {
+  width: 100%; /* width på 100% */
+  height: 100%; /* wb på 100% */
+}
+.card p {
+  position: absolute; /* Placerer teksten absolut inde i kortet */
+  top: 50%; /* Centrerer vertikalt */
+  left: 50%; /* Centrerer horisontalt */
+  transform:translate(-50%, -50%); /* flytter elementet 50% tilbage både vandret og lodret, så det er perfekt centreret */
+  margin: 0;
+  padding: 10px; /* Tilføjer luft omkring <p> */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent baggrund for bedre læsbarhed og design "purpose" */
+  color: white; /* Angiver tekstfarve hvid */
+}
+
+
+.card::before {
+  content: ""; /* Tomt pseudo-element */
+  position: absolute; /* Absolute placering */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Mørk skyggefarve med gennemsigtighed */
+  opacity: 0; /* Begynder med 0 opacity */
+  transition: opacity 1s ease; /* Tilføjer en overgangseffekt */
+}
+
+.card:hover::before {
+  opacity: 1; /* Gør pseudo-elementet fuldt synligt ved hover (tomt) */
+}
+
+/* ---------- Forside Besøg Butik -------- */
+/* ---------- Grid/Style -------- */
+.besoeg-grid {
+  display: grid; /* bruger grid layout */
+  grid-template-columns: repeat(2, 1fr); /* laver to kolonner */
+  grid-template-rows: auto; /* rækker tilpasser sig efter indholdets højde */
+  grid-gap: 20px; /* Tilføjer mellemrum mellem alle grid-elementer */
+  padding: 20px; /* Tilføjer indre margin til hele grid-containeren */
+  background-color: #fbf9f8; /* angiver baggrundsfarve */
+  margin-top: 50px; /* skubber ned */
+}
+
+.div2-tekst {
+  background-color: #fbf9f8; /* angiver baggrundsfarve */
+  padding: 20px; /* Indre margin for divs */
+}
+
+.div2-tekst a {
+  color: #000000; /* angiver <a> farven til at være sort  */
+  text-decoration: none; /* ingen tekst dekoration  */
+  background-color:#fbf9f8; /* angiver baggrundsfarve */
+}
+
+.div2-tekst a:hover {
+  color: #000000;
+  text-decoration: underline; /* Giver underline som hover  */
+}
+
+.div1-butik { grid-area: 1 / 1 / 2 / 2; } /* placerer sig i første række og strikker sig  */
+.div2-tekst { grid-area: 1 / 2 / 2 / 3; } /* placerer sig i første række og strikker sig  */
+
+/* Footer style */
+.site-footer {
+  width: 100%;
+  background-color: #fbf9f8; /* angiver baggrundsfarve */
+  padding: 48px 20px 60px; /* tilføjer indre margin: 48px øverst, 20px på siderne, 60px nederst */
+  box-sizing: border-box; /* inkluderer padding og border i elementets samlede bredde og højde */
+  /* flexbox */
+  display: flex; /* bruger flexbox layout */
+  justify-content: center; /* centrerer indholdet horisontalt */
+  align-items: center; /* centrerer indholdet vertikalt */
+  margin-top: 50px; /* Afstand til indholdet ovenfor */
+  min-width: 100%; /* sikrer at elementet er 100% bredt */
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex; /* bruger flexbox layout */
+  justify-content: space-between; /* fordeler pladsen, med luft imellem */
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1; /* gør sektionen fleksibel samt lader den vokse */
+  margin: 0 20px; /* tilføjer margin på 20px til venstre og højre */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px; /* tilføjer luft under overskriften */
+  font-size: 15px; /* sætter font størrelse til 15 pixels */
+  font-weight: 500; /* sætter font vægten til 500 */
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 5px 0; /* tilføjer margin på 5px over og under */
+  color: #333; /* sætter p og a farven */
+  text-decoration: none; /* fjerner tekstdekoration */
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* tilføjer underline som hover */
+}
+
+.footer-section a i {
+  margin-right: 8px; /* tilføjer margin på 8px til højre for ikonet inden i linket */
+}
+
+/* ------- Garn.html style ----- */
+/* ------- Flexbox ----- */
+
+/* Garn overskrift */
+#garn_overskrift {
+  display: flex; /* bruger flexbox layout */
+  justify-content: center; /* centrerer indholdet horisontalt */
+  font-family: "Montserrat", sans-serif; /* sætter fonttype til at være Montserrat */
+  font-weight: 350; /* sætter font vægten til 350 */
+  font-size: 40px; /* sætter skriftstørrelsen til at være 40 pixels */
+  margin-top: 50px; /* tilføjer 50px afstand over overskriften */
+  margin-bottom: 15px; /* tilføjer 15px afstand under overskriften */
+}
+
+/* Garn h2 style */
+#garn_h2 {
+  display: flex; /* bruger flexbox layout */
+  justify-content: center; /* centrerer indholdet horisontalt */
+  font-family: "Montserrat", sans-serif; /* sætter fonttype til at være Montserrat */
+  font-weight: 300;  /* sætter font vægten til 300 */
+  font-size: 20px; /* sætter font størrelse til at være 20 pixels */
+  margin-top: 50px; /* tilføjer 50px afstand over overskriften */
+  margin-bottom: 15px; /* tilføjer 15px afstand under overskriften */
+}
+
+ /* Garn.html produktoverskrifter (Uld, Bomuld, Mohair, Silke & Hør, Akryl, Blandinger */
+/* h1 container */
+.header-container {
+  display: flex; /* bruger flexbox layout */
+  justify-content: center; /* centrerer indholdet horisontalt */
+  flex-wrap: wrap; /* gør så flex-elementerne at bryde til næste linje hvis nødvendigt */
+  gap:20px; /* tilføjer 20 pixels "luft" mellem elementerne */
+  margin-top: 120px; /* Tilføjer 120 pixels luft over containeren, samt skubber den ned */
+}
+
+.header-container > * {
+  flex-basis: calc(25% - 30px); /* Sætter bredden til 25% minus gap, så der er plads til 4 elementer på hver "linje" */
+}
+
+
+/* Garn cards style */
+.shopping-cards {
+  display: flex; /* bruger flexbox layout */
+  flex-wrap: wrap; /* gør så flex-elementerne at bryde til næste linje hvis nødvendigt */
+  justify-content: space-between;
+  max-width: 75%; /* maks bredde på 75% af containerens bredde */
+  margin: 0 auto; /* Centrerer elementet vandret */
+  margin-top: 20px; /* tilføjer 20 pixels luft over elementet */
+  margin-bottom: 20px; /* tilføjer 20 pixels luft under elementet */
+}
+
+.product-card {
+  width: calc(25% - 20px); /* sætter bredden til 25% minus 20 pixels */
+  margin-bottom: 20px; /* tilføjer 20 pixels luft under kortet */
+  border: 1px solid #ddd; /* tilføjer en kant rundt om kortet/billedet */
+  border-radius: 8px; /* afrunder hjørnerne med en radius på 8 pixels for at give et lidt blødere udtryk */
+  box-sizing: border-box; /* inkluderer padding og border i elementets samlede bredde og højde */
+}
+
+.oprindelig-pris {
+  color: red; /* sætter tekstfarven til rød, for at tydeliggøre, at prisen ikke gælder */
+  text-decoration: line-through; /* tilføjer en gennemstregning til teksten */
+  margin-right: 10px; /* tilføjer 10 pixels luft til højre for teksten */
+}
+
+.rabat-pris {
+  color: black; /* sætter tekstfarven til sort,for at tydeliggøre, at dette er den gældende pris */
+  font-weight: bold; /* gør teksten fed */
+}
+
+.product-card img {
+  width: 100%; /* gør billedet 100% bredt så det fylder hele kortets bredde */
+  border-radius: 8px 8px 0 0; /* afrunder de øverste hjørner af billedet */
+}
+
+.card-content {
+  padding: 20px; /* tilføjer 20 pixels indre margin */
+}
+
+.card-content h2 {
+  margin-top: 0; /* fjerner margin ovenover overskriften */
+  font-size: 15px; /* sætter font størrelse til 15px */
+  font-weight: 400; /* sætter vægten til 400 (normal) */
+}
+
+.card-content p {
+  margin-bottom: 10px; /* tilføjer 10 pixels luft under paragrafen */
+  font-size: 15px; /* sætter font størrelse til 15 pixels */
+  font-weight: 600; /* gør teksten federe */
+}
+
+.card-content button {
+  background-color: #000000; /* angiver baggrundsfarve til sort */
+  color: white; /* sætter tekstfarven til hvid */
+  border: none; /* fjerner kant */
+  padding: 10px 20px; /* tilføjer 10 pixels top/bund og 20 pixels venstre/højre padding */
+  text-align: center; /* centrerer teksten indeni button */
+  text-decoration: none; /* fjerner alt tekstdekoration */
+  display: inline-block; 
+  font-size: 16px; /* sætter font til 16 pixels */
+  border-radius: 5px; /* afrunder hjørnerne med en radius på 5 pixels */
+  cursor: pointer;
+  width: 100%; /* gør knappen 100% bred */
+  opacity: 75%; /* sætter opaciteten til 75% */
+}
+
+/* hover */
+.card-content button:hover {
+  background-color: #000000; /* baggrundsfarve sort */
+  opacity: 100%; /* ændrer opaciteten til 100% når musen er over knappen */
+  transition: opacity 1s ease; /* tilføjer en overgangseffekt til opacitetsændringen */
+}
+
+.hidden {
+  display: none; 
+}
+
+/* Style for produktoverskrifter h1 */
+#uldHeader,
+#bomuldHeader,
+#mohairHeader,
+#silkeHoerHeader,
+#akrylHeader,
+#blandingerHeader,
+#filtedeHeader,
+#skoogstroemperHeader,
+#tilbehørHeader,
+#diverseHeader,
+#maerkaterHeader,
+#babyHeader,
+#boernHeader,
+#kvinderHeader,
+#maendHeader,
+#sjalerHeader,
+#haekleriHeader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px; /* sætter 20px font size */
+  font-weight: 400; /* sætter vægt til at være 400 */
+  color: #333; /* angiver farve */
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border: 1px solid; /* Tilføjer en border */
+  padding: 5px 10px; /* Tilføjer lidt luft omkring indholdet */
+  transition: transform 0.5s ease; /* Tilføjer overgangseffekt på transform */
+}
+
+
+/* Hover for produkter h1 */
+#uldHeader:hover,
+#bomuldHeader:hover,
+#mohairHeader:hover,
+#silkeHoerHeader:hover,
+#akrylHeader:hover,
+#blandingerHeader:hover,
+#filtedeHeader:hover,
+#skoogstroemperHeader:hover,
+#tilbehørHeader:hover,
+#diverseHeader:hover,
+#maerkaterHeader:hover,
+#babyHeader:hover,
+#boernHeader:hover,
+#kvinderHeader:hover,
+#maendHeader:hover,
+#sjalerHeader:hover,
+#haekleriHeader:hover {
+  transform: scale(1.10); /* Lidt forstørrelse ved hover */
+}
+
+
+/* Popup container - garn.html produkter */
+.popup {
+  position: relative; /* relativ positionering  */
+  display: inline-block; /* gør elementet inline-block, så det får en blok-boks men gør sig som inline */
+  cursor: pointer; 
+  -webkit-user-select: none; /* forhindrer tekstvalg i Webkit-browsere  */
+  -moz-user-select: none; /* forhindrer tekstvalg i Mozilla-browsere */
+  -ms-user-select: none; /* forhindrer tekstvalg i Microsoft-browsere */
+  user-select: none; /* forhindrer tekstvalg i alle moderne browsere */
+  margin-top: 15px; /* tilføjer 15 pixels luft over */
+  margin-bottom: 15px; /* tilføjer 15 pixels luft under */
+}
+
+/* Popup boksen style */
+.popup .popuptext {
+  visibility: hidden; /* gør det usynligt inden javascript indblanding */
+  width: 280px; /* sætter bredden til 280px */
+  background-color: #858585; /* sætter baggrundsfarven til grå */
+  color: #ffffff; /* sætter tekstfarven til hvid */
+  text-align: center; /* centrerer teksten */
+  border-radius: 6px; /* afrunder hjørnerne */
+  padding: 8px 0; /* tilføjer 8 pixels padding øverst og nederst */
+  position: absolute; /* placerer elementet absolut */
+  z-index: 1; /* sætter z-indekset til 1, så det placeres over andre elementer med lavere z-indeks */
+  bottom: 125%; 
+  left: 50%; 
+  margin-left: -80px; /* flytter elementet 80 pixels til venstre, for at centrerer det */
+  opacity: 0; /* gør elementet helt gennemsigtigt */
+  transition: opacity 0.5s; /* tilføjer en overgangseffekt til opacitetsændringen, der varer 0.5 sekunder */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: ""; /* tilføjer et tomt indhold */
+  position: absolute; /* placerer pilen absolut */
+  top: 100%; /* placerer pilen lige under .popuptext */
+  left: 50%; /* centrerer pilen horisontalt under .popuptext */
+  margin-left: -5px; /* centrerer den */
+  border-width: 5px; /* sætter bredden på pilens kanter til 5px */
+  border-style: solid; /* solid kantstil */
+  border-color: #555 transparent transparent transparent; /* sætter pilens farver */
+}
+
+/* Vis popup */
+.popup .show {
+  visibility: visible; /* gør popup synlig */
+  opacity: 1; /* sætter opaciteten til 100% (fuldt synlig) */
+}
+
+/* FadeIn */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} /* starter med 0% opacitet */
+  to {opacity: 1;} /* slutter med 100% opacitet */
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;} /* starter med 0% opacitet */
+  to {opacity: 1;} /* slutter med 100% opacitet */
+}
+
+/* FadeOut animation */
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;} /* starter med 100% opacitet */
+  to {opacity: 0;} /* slutter med 0% opacitet */
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;} /* starter med 100% opacitet */
+  to {opacity: 0;} /* slutter med 0% opacitet */
+}
+
+/* Call to action garnomregner style - Garn.html */
+.cta-container {
+    background-color: #f9f4ef; /* sætter baggrundsfarven */
+    padding: 30px; /* tilføjer 30px indre margin */
+    border-radius: 8px; /* afrunder hjørnerne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* tilføjer en skygge */
+    text-align: center; /* centrerer teksten */
+    max-width: 600px; /* maks bredde på 600px */
+    margin: 0 auto; /* centrerer containeren vandret */
+}
+
+.cta-container p {
+    color: #333; /* sætter tekstfarven */
+    margin: 10px 0; /* tilføjer 10px luft over og under paragrafen */
+    font-size: 18px; /* sætter font størrelse */
+}
+
+.cta-container button {
+    background-color: #000; /* sætter baggrundsfarven */
+    color: #fff; /* sætter tekstfarven */
+    border: none; /* fjerner kant */
+    padding: 15px 25px; /* tilføjer 15px top/bund og 25px venstre/højre padding */
+    border-radius: 4px; /* afrunder hjørnerne */
+    font-size: 18px; /* sætter font størrelse */
+    cursor: pointer; 
+    margin-top: 20px; /* tilføjer 20px luft over knappen */
+}
+
+.cta-container button:hover {
+    background-color: #333; /* ændrer baggrundsfarven til mørkegrå når musen er over knappen */
+}
+
+
+/* ---- omos.html style ---- */
+.introduktion_container {
+  display: block; /* gør containeren til en blok element */
+  padding: 30px; /* tilføjer 30px indre margin */
+  margin-bottom: 30px; /* tilføjer 30px luft under containeren */
+  margin-top: 80px; /* tilføjer 80px luft over containeren */
+  max-width: 1150px; /* sætter en maks bredde på 1150 pixels */
+}
+
+hr.underline {
+  border: none; /* fjerner border */
+  border-top: 1px solid #444; /* tilføjer en ny border "streg" over teksten */
+  width: 10%; /* sætter bredden på stregen til 10% */
+  margin-top: 50px; /* tilføjer 50px luft over stregen */
+}
+
+#omos_overskrift {
+  color: #444; /* sætter tekstfarven */
+  font-size: 36px; /* sætter font til 36px */
+  margin-bottom: 10px; /* tilføjer 10px luft under overskriften */
+}
+
+#bagved_garnhylderne {
+  color: #444; /* sætter tekstfarven */
+  font-size: 36px; /* sætter font til 36px */
+  margin-bottom: 10px; /* tilføjer 10px luft under */
+}
+
+#omos_tekst {
+  color: #7A7A7A; /* sætter tekstfarven */
+  font-size: 16px; /* sætter font til 16px */
+  line-height: 1.6; /* sætter linjehøjden til 1.6 */
+  margin-top: 40px; /* tilføjer 40px luft over */
+  padding-bottom: 30px; /* tilføjer 30px margin under */
+}
+
+/* Opskrifter */
+/* h1 container */
+.header-container_opskrifter {
+  display: flex; /* bruger flexbox layout */
+  flex-wrap: wrap; /* tillader at bryde til næste linje */
+  gap: 20px; /* tilføjer 20px luft mellem elementerne */
+  max-width: 1000px; /* sætter maks bredde på 1000px */
+  margin: 100px; /* tilføjer 100px luft omkring containeren */
+  margin-top: 140px; /* tilføjer 140px luft over containeren */
+  max-height: 80px; /* sætter maks højde til 80px */
+}
+
+/* Garnomregner.html */
+.main-container {
+    display: flex; /* bruger flexbox layout */
+    justify-content: center; /* centrerer indholdet horisontalt */
+    flex-direction: row; /* placerer elementerne i en række */
+    padding: 20px; /* tilføjer 20px indre margin */
+    gap: 20px; /* tilføjer 20px mellemrum mellem elementerne */
+    max-width: 1440px; /* sætter maks bredde på 1440px */
+    margin: 70px auto; /* tilføjer 70px luft over og under containeren samt centrerer den horisontalt */
+}
+
+.info-section {
+    flex: 1; /* gør sektionen fleksibel */
+    background-color: #fbf9f8; /* sætter baggrundsfarven */
+    padding: 20px; /* tilføjer 20px indre margin */
+    border-radius: 8px; /* afrunder hjørnerne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* tilføjer en let skygge omkring sektionen */
+}
+
+.info-section h1, .info-section h2 {
+    color: #333; /* sætter tekstfarven */
+}
+
+.info-section p {
+    color: #555; /* sætter tekstfarven */
+    line-height: 1.6; /* sætter linjehøjden til 1.6 */
+}
+
+.calculator-section {
+    background-color: #fbf9f8; /* sætter baggrundsfarven */
+    padding: 20px; /* tilføjer 20px indre margin */
+    border-radius: 8px; /* afrunder hjørnerne*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* tilføjer en let skygge */
+    max-width: 400px; /* sætter maks bredde på 400px */
+}
+
+.calculator-section h1 {
+    margin-bottom: 40px; /* tilføjer 40px luft under overskriften */
+    color: #333; /* sætter tekstfarven */
+    text-align: center; /* centrerer teksten */
+}
+
+form {
+    display: flex; /* bruger flexbox layout */
+    flex-direction: column; /* placerer elementerne i en kolonne */
+}
+
+fieldset {
+    border: none; /* fjerner kant */
+    margin-bottom: 20px; /* tilføjer 20px luft under feltet */
+}
+
+legend {
+    font-weight: bold; /* gør teksten fed */
+    margin-bottom: 10px; /* tilføjer 10px luft under teksten */
+}
+
+label {
+    margin-top: 10px; /* tilføjer 10px luft over label */
+}
+
+input {
+    width: calc(100% - 22px); /* sætter bredden til 100% minus 22px */
+    padding: 10px; /* tilføjer 10px indre margin */
+    margin-top: 5px; /* tilføjer 5px luft over input-feltet */
+    margin-bottom: 15px; /* tilføjer 15px luft under input-feltet */
+    border: 1px solid #ddd; /* tilføjer en tynd kant */
+    border-radius: 4px; /* afrunder hjørnerne */
+}
+
+#results {
+    margin-top: 20px; /* tilføjer 20px luft over resultaterne */
+    padding: 10px; /* tilføjer 10px indre margin */
+    background-color: #e9ecef; /* sætter baggrundsfarven */
+    border-radius: 4px; /* afrunder hjørnerne */
+}
+
+#beregn_button {
+    background-color: #000000; /* sætter baggrundsfarven til sort */
+    color: white; /* sætter tekstfarven til hvid */
+    border: none; /* fjerner kant */
+    padding: 10px 20px; /* tilføjer 10px top/bund samt 20px venstre/højre padding */
+    text-align: center; /* centrerer teksten */
+    text-decoration: none; /* fjerner tekstdekoration */
+    display: inline-block; /* gør knappen til et inline-blok */
+    font-size: 16px; /* sætter font til 16px */
+    border-radius: 5px; /* afrunder hjørnerne */
+    cursor: pointer;
+    width: 100%; /* gør knappen 100% bred */
+    opacity: 75%; /* sætter opaciteten til 75% */
+}
+
+#beregn_button:hover {
+    background-color: #000000; /* baggrundsfarven sort */
+    opacity: 100%; /* ændrer opaciteten til 100% når musen er over knappen */
+    transition: opacity 1s ease; /* tilføjer en overgangseffekt til opacitetsændringen */
+}
+
+.udeafdrift-container {
+    text-align: center; /* centrerer teksten */
+    background: white; /* sætter baggrundsfarven til hvid */
+    padding: 20px; /* tilføjer 20px indre margin */
+    border: 1px solid #ccc; /* tilføjer en kant */
+    border-radius: 10px; /* afrunder hjørnerne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* tilføjer en skygge omkring containeren */
+}
+
+.udeafdrift-container a {
+    color: #007bff; /* sætter linkfarven */
+    text-decoration: none; /* fjerner tekstdekoration */
+}
+
+.udeafdrift-container a:hover {
+    text-decoration: underline; /* tilføjer underline når musen er over linket */
+}
