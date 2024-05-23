@@ -1,1 +1,741 @@
-
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Garnlageret-Aarhus Forside</title>
+    <!-- SEO -->
+    <meta name="keywords" content="Garn, Salg af garn, strik, strikkepinde,
+     billigt garn, hvor meget garn skal jeg bruge?,
+     garn aarhus, garnlageret">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Garnlageret-Aarhus">
+    <meta property="og:site_name" content="Garnlageret-Aarhus">
+    <meta property="og:description" content="Salg af garn">
+    <meta name="geo.placename" content="Aarhus">
+    <meta name="author" content="Claus Moldt">
+    <!-- description -->
+    <meta name="description" content="Velkommen til Garnlageret Aarhus, her finder du kvalitetsgarn til gode priser">
+    <!-- CSS + JS + Fonts + icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+<body>
+<!-- MENU -->
+ <header>
+<div class="top-bar">
+  <span>Butik i over 30 år</span>
+  <span>Gratis fragt ved køb over 500,-</span>
+  <span>Billig fragt fra 49,-</span>
+  <span>Tlf. +45 9156 6064 (Hverdage 10-13)</span>
+        </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html"><img src="image/nyelogo.png" alt="Garnspecialisten"></a>
+                </div>
+                <div class="soegefunktion">
+                    <input type="text" id="search" placeholder="Søg efter produkter...">
+                    <button onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                </div>
+               <div class="icons">
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+            </nav>
+            <nav class="sub-nav">
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="#">Produkter</a>
+                        <ul class="dropdown-content">
+                            <li><a href="garn.html">Garn</a></li>
+                            <li><a href="tilbehør.html">Tilbehør</a></li>
+                            <li><a href="garnomregner.html">Garnomregner</a></li>
+                            <li><a href="udeafdrift.html">Nyheder</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="opskrifter.html">Opskrifter</a>
+                        <ul class="dropdown-content">
+                            <li><a href="opskrifter.html">Alle opskrifter</a></li>
+                            <li><a href="opskrifter.html">Hæklerier</a></li>
+                            <li><a href="opskrifter.html">Baby</a></li>
+                            <li><a href="opskrifter.html">Børn</a></li>
+                            <li><a href="opskrifter.html">Kvinder</a></li>
+                            <li><a href="opskrifter.html">Mænd</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="udeafdrift.html">Nyheder</a>
+                        <ul class="dropdown-content">
+                            <li><a href="garn.html">Spar 20% på uld</a></li>
+                            <li><a href="garnomregner.html">Garnomregner</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="udeafdrift.html">Garnalternativer</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="garnomregner.html">Garnomregner</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="omos.html">Om os</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+  <!-- Header slut -->
+  <!-- Start main -->
+ <main>
+<!-- Produkter -->
+<h1 id="garn_overskrift">Garn</h1>
+<h2 id="garn_h2">Denne side er opdelt i forskellige typer garn. Klik på den ønskede kategori for at finde det garn, du leder efter</h2>
+<!-- Overskrifter til filtrering af produkter -->
+    <div class="header-container">
+        <h1 id="uldHeader">Uld</h1>
+        <h1 id="bomuldHeader">Bomuld</h1>
+        <h1 id="mohairHeader">Mohair</h1>
+        <h1 id="silkeHoerHeader">Silke & Hør</h1>
+        <h1 id="akrylHeader">Akryl</h1>
+        <h1 id="blandingerHeader">Blandinger</h1>
+    </div>
+<!-- Uld produkter -->
+    <div class="wrapper" id="uldWrapper">
+        <div class="shopping-cards">
+            <!-- Uld produkter -->
+<article class="product-card">
+    <figure>
+        <img src="image/alpaca-400.webp" alt="Produkt">
+        <figcaption class="card-content">
+            <h2>Alpaca 400</h2>
+            <p><span class="oprindelig-pris">63,00 DKK</span><span class="rabat-pris">50,40 DKK</span></p>
+            <!-- Popup beskrivelse -->
+            <div class="popup" onclick="myFunction(this)">Beskrivelse
+                <span class="popuptext myPopup">En tynd lækker 100 % ren alpaca fra Hjertegarn. <br><br> Løbelængde 400 m/50 g
+                <br><br> Den er fantastisk at strikke med sammen med andet garn.<br><br>Skal Håndvaskes.</span>
+            </div>
+            <!-- tilføj til kurv knap -->
+            <button>Tilføj til kurv</button>
+        </figcaption>
+    </figure>
+</article>
+<article class="product-card">
+    <figure>
+        <img src="image/Articogvital.webp" alt="Produkt">
+        <figcaption class="card-content">
+            <h2>Artic og Vital</h2>
+            <p><span class="oprindelig-pris">24,00 DKK</span><span class="rabat-pris">19,20 DKK</span></p>
+            <!-- Popup beskrivelse -->
+            <div class="popup" onclick="myFunction(this)">Beskrivelse
+                <span class="popuptext myPopup">100% ren superwash behandlet uld fra henholdsvis Grønhøj Garn og Hjertegarn. <br><br>Løbelængde ca. 112 m/50 g.
+                <br><br>Pind 3½ - 4. Strikkefasthed: 22 m = 10 cm.<br><br>Uldvask max. 30 grader.</span>
+            </div>
+            <!-- tilføj til kurv knap -->
+            <button>Tilføj til kurv</button>
+        </figcaption>
+    </figure>
+</article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/garn-til-farvning.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Garn til farvning</h2>
+                      <p><span class="oprindelig-pris">45,00 DKK</span> <span class="rabat-pris">36,00 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                       <span class="popuptext myPopup">Her findes forskellige garntyper til hånd- og plantefavning.<br><br>Ren uld i forskellige tykkelser og forskellige udagver i strømpegarn.
+                       </span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/hjertefine.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Hjerte Fine Highland Wool</h2>
+                      <p><span class="oprindelig-pris">28,50 DKK</span> <span class="rabat-pris">22,80 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Blød 100 % uld med en lang løbelængde.<br><br>Løbelængde: 180 m/40 g
+                       <br><br>Pind 3 - 3½<br><br>Strikkefasthed: 26 m = 10 cm på pind 3<br><br>Håndvask</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/incawool.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Incawool</h2>
+                      <p><span class="oprindelig-pris">57,50 DKK</span> <span class="rabat-pris">46,00 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Incawool er en blød tyk uld, som er lavet af 100% Highland wool fra Sydamerika.
+                       <br><br>Strikkefasthed: 18 m = 10 cm.<br><br>Løbelængde: 160 meter<br><br>vægt: 100 gram.<br><br>Pinde: 4½ - 5.<br><br>Skal håndvaskes.<br><br>Velegnet til filtning.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/kamgarn.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Kamgarn</h2>
+                      <p><span class="oprindelig-pris">24,00 DKK</span> <span class="rabat-pris">19,20 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">100% superwashbehandlet uld fra Grønhøj Garn og Hjertegarn.<br><br>Løbelængde 150 m/50 g.
+                       <br><br>Pind 2½ - 3½. Strikkefasthed: 26 m = 10 cm på pind 3.<br><br>Uldvask ved max 40 grader.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/naturuld.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Naturuld</h2>
+                     <p><span class="oprindelig-pris">52,00 DKK</span> <span class="rabat-pris">41,60 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Tyk, blød 100% uld fra Grønhøj Garn.<br><br>Løbelængde 100 m/100 g.
+                       <br><br>Pind 6 - 7.<br><br>Strikkefasthed: 14 m = 10 cm.<br><br>Skal Håndvaskes.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/pernilla.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Pernilla</h2>
+                      <p><span class="oprindelig-pris">42,50 DKK</span> <span class="rabat-pris">34,00 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Pernilla er 3-trådet kamgarnsspundet garn, spundet af fyldig peruviansk højlandsuld.  Garnet er særligt godt til snoninger, strukturmønstre og ikke mindst flerfarvestrik og -hækling.<br><br>
+                            <br>Pernilla fås i 30 farver.
+                            <br>100 % ren, ny uld
+                            <br>Løbelængde: 175 m / 50 g
+                            <br>Pinde: 3½-4 mm
+                            <br>Strikkefasthed: 22-24 m x 30-34 p pr. 10x10 cm
+                            <br><br>skal håndvaskes
+                          </span>
+                       </div>
+                       <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/peru.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Peru</h2>
+                      <p><span class="oprindelig-pris">24,00 DKK</span> <span class="rabat-pris">19,20 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">En god 100% uld, forrygende til filtning.<br><br>
+                            Løbelængde 100 m./50
+                            <br>Pind 5. Strikkefasthed: 20 m = 10 cm.
+                            <br><br>Håndvask, med mindre den skal filtes/valkes.
+                       </span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/saga.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Saga</h2>
+                      <p><span class="oprindelig-pris">57,00 DKK</span> <span class="rabat-pris">45,60 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Et klassisk, tyndt uldgarn, spundet af lækker langfibret uld. Garnet er strøggarnsspundet og derfor dejlig fyldigt.<br><br>Saga hed tidligere New Zealand Lammeuld. Det er helt det samme lækre garn, blot nu med nyt navn.
+                           <br><br>Fiber: 100 % uld
+                            <br>Løbelængde: 300 m / 50 g
+                            <br>Oplægning: Nøgler a 50 g / Bundter á 100 g
+                           <br> Vask: Håndvask</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/trunte.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Trunte</h2>
+                      <p><span class="oprindelig-pris">41,00 DKK</span> <span class="rabat-pris">32,80 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Babyuld i 100% superwash behandlet merinould fra Hjertegarn.<br>
+                            <br>Løbelængden er 180 m/50 g.
+                           <br> Pind 2½ - 3. Strikkefasthed: 28 m = 10 cm.
+                          <br><br>Uldvask 30 - 40 grader.
+                        </span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+              <figure>
+                  <img src="image/vilja-indiecita.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Vilja/Indiecita</h2>
+                      <p><span class="oprindelig-pris">57,00 DKK</span> <span class="rabat-pris">45,60 DKK</span></p>
+                      <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">Lækker blød 100 % alpaca-uld.<br>En alpaca er en lama art.
+                       <br><br>Løbelængde: 160 m pr 50 gram.
+                       Pind: 2½, 3 eller mere.
+                       Strikkefasthed: ca 27 masker på 10 cm på pind 3.
+                       <br><br>Skal Håndvaskes.</span>
+                      </div>
+                      <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+      </div>
+  </div>
+<!--Bomuld produkter-->
+    <div class="wrapper hidden" id="bomuldWrapper">
+        <div class="shopping-cards">
+           <!-- Bomuld produkter -->
+      <article class="product-card">
+          <figure>
+              <img src="image/bomuld/blend-bamboo.webp" alt="Produkt">
+              <figcaption class="card-content">
+                  <h2>Blend Bamboo</h2>
+                  <p>27,00 DKK</p>
+                   <!-- Popup beskrivelse -->
+                  <div class="popup" onclick="myFunction(this)">Beskrivelse
+                    <span class="popuptext myPopup">En lækker blød og lidt blank bambus og bomuldsblanding fra Hjertegarn.<br><br>
+                        70% bamboo 30% bomuld
+                        <br>Løbelængde 150 m/50 g.
+                        <br>Pind 3 -3½. Strikkefasthed: 26 m = 10 cm.
+                        <br><br>Maskinvask ved 40 grader
+                        </span>
+                  </div>
+                     <!-- tilføj til kurv knap -->
+                  <button>Tilføj til kurv</button>
+              </figcaption>
+          </figure>
+      </article>
+      <article class="product-card">
+        <figure>
+            <img src="image/bomuld/blod-bomuld-nr-8.webp" alt="Produkt">
+            <figcaption class="card-content">
+                <h2>Blød Bomuld nr 8</h2>
+                <p>28,00 DKK</p>
+                 <!-- Popup beskrivelse -->
+                <div class="popup" onclick="myFunction(this)">Beskrivelse
+                    <span class="popuptext myPopup">Lækker blød 100% bomuld fra Grønhøj Garn.<br><br>
+                        Løbelængde 340 m/100 g.
+                        <br>Pind 2½-3. Strikkefasthed 28 m = 10 cm.
+                        <br><br>Maskinvask op til 60 grader.
+                    </span>
+                  </div>
+                     <!-- tilføj til kurv knap -->
+                <button>Tilføj til kurv</button>
+            </figcaption>
+        </figure>
+    </article>
+    <article class="product-card">
+      <figure>
+          <img src="image/bomuld/cotton-8-4.webp" alt="Produkt">
+          <figcaption class="card-content">
+              <h2>Cotton 8/4</h2>
+              <p>14,00 DKK</p>
+               <!-- Popup beskrivelse -->
+              <div class="popup" onclick="myFunction(this)">Beskrivelse
+                <span class="popuptext myPopup">100% ren bomuld fra Grønhøj Garn.<br><br>
+                    Løbelængden er 170 m/50 g.
+                    <br>Pind 2½-3. Strikkefasthed: 27 m = 10 cm.
+                    <br><br>Maskinvask op til 60 grader.  </span>
+              </div>
+                 <!-- tilføj til kurv knap -->
+              <button>Tilføj til kurv</button>
+          </figcaption>
+      </figure>
+  </article>
+  <article class="product-card">
+    <figure>
+        <img src="image/bomuld/cotton-8-8.webp" alt="Produkt">
+        <figcaption class="card-content">
+            <h2>Cotton 8/8</h2>
+            <p>16,50 DKK</p>
+             <!-- Popup beskrivelse -->
+            <div class="popup" onclick="myFunction(this)">Beskrivelse
+                <span class="popuptext myPopup">En tynd lækker 100 % ren alpaca fra Hjertegarn. <br><br> Løbelængde 400 m/50 g
+               <br><br> Den er fantastisk at strikke med sammen med andet garn.<br><br>Skal Håndvaskes.</span>
+              </div>
+                 <!-- tilføj til kurv knap -->
+            <button>Tilføj til kurv</button>
+        </figcaption>
+    </figure>
+</article>
+<article class="product-card">
+  <figure>
+      <img src="image/bomuld/diamond-cotton-8-4.webp" alt="Produkt">
+      <figcaption class="card-content">
+          <h2>Diamond Cotton 8/4</h2>
+          <p>25,00 DKK</p>
+           <!-- Popup beskrivelse -->
+          <div class="popup" onclick="myFunction(this)">Beskrivelse
+            <span class="popuptext myPopup">
+                100% ren bomuld fra Grønhøj Garn.
+                <br>Løbelængde: 80 m/50 g.
+                <br>Pind 4½. Strikkefasthed:
+                <br><br>Maskinvask op til 60 grader.</span>
+          </div>
+             <!-- tilføj til kurv knap -->
+          <button>Tilføj til kurv</button>
+      </figcaption>
+  </figure>
+</article>
+<article class="product-card">
+  <figure>
+      <img src="image/bomuld/merci.webp" alt="Produkt">
+      <figcaption class="card-content">
+          <h2>Merci</h2>
+          <p>60,00 DKK</p>
+           <!-- Popup beskrivelse -->
+          <div class="popup" onclick="myFunction(this)">Beskrivelse
+            <span class="popuptext myPopup">En lækker blanding af uld og bomuld.<br><br>
+                50% af hver.
+                <br>Løbelængde ca. 200 m/50 g.
+                <br>Pind 3 - 3½. Strikkefasthed 26 m = 10 cm.
+                <br><br>Maskinvask på uldprogrammet max. 30 grader.
+            </span>
+          </div>
+             <!-- tilføj til kurv knap -->
+          <button>Tilføj til kurv</button>
+      </figcaption>
+  </figure>
+</article>
+<article class="product-card">
+  <figure>
+      <img src="image/bomuld/organic-350.webp" alt="Produkt">
+      <figcaption class="card-content">
+          <h2>Organic 350</h2>
+          <p>43,00 DKK</p>
+           <!-- Popup beskrivelse -->
+          <div class="popup" onclick="myFunction(this)">Beskrivelse
+            <span class="popuptext myPopup">Organic 350 er en tynd blød blanding af uld og bomuld.<br><br>
+                55% Organic Merino Wool / 45% Organic Cotton
+                <br>Pinde: 3 - 3½
+                <br>Løbelængde:  ca. 350 m/50 g
+                <br>Strikkefasthed: 26m
+                <br><br>Vask: uldvask 30º med uldvaskemiddel</span>
+          </div>
+             <!-- tilføj til kurv knap -->
+          <button>Tilføj til kurv</button>
+      </figcaption>
+  </figure>
+</article>
+<article class="product-card">
+  <figure>
+      <img src="image/bomuld/roma.webp" alt="Produkt">
+      <figcaption class="card-content">
+          <h2>Roma</h2>
+          <p>22,00 DKK</p>
+           <!-- Popup beskrivelse -->
+          <div class="popup" onclick="myFunction(this)">Beskrivelse
+            <span class="popuptext myPopup">En tynd lækker 100 % ren alpaca fra Hjertegarn. <br><br> Løbelængde 400 m/50 g
+           <br><br> Den er fantastisk at strikke med sammen med andet garn.<br><br>Skal Håndvaskes.</span>
+          </div>
+             <!-- tilføj til kurv knap -->
+          <button>Tilføj til kurv</button>
+      </figcaption>
+  </figure>
+</article>
+        </div>
+    </div>
+<!-- Mohair produkter -->
+    <div class="wrapper hidden" id="mohairWrapper">
+        <div class="shopping-cards">
+            <!-- Mohair produkter -->
+            <article class="product-card">
+                <figure>
+                    <img src="image/mohair/1-tradet-mohair.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>1-trådet mohair</h2>
+                        <p>105,00 DKK</p>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">1-trådet mohair fra Mohair by Canard.<br><br>Lækker blød mohair blanding. 65% mohair og 35% merinould
+                                <br><br>Pind 2 - 3½. 
+                                <br><br>Håndvask.</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+              <figure>
+                  <img src="image/mohair/brushed-lace-og-silk-kid-mohair.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Brushed Lace og Silk Kid Mohair</h2>
+                      <p>69,00 DKK</p>
+                       <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">
+                            72% kidmohair og 28% morbærsilke <br>
+                            ca 210 m/25 g <br>
+                            Pinde: 2½-5 mm <br> <br>
+                            fra Mohair by Canard og Hjertegarn.</span>
+                      </div>
+                         <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+      </div>
+</div>
+<!-- Silke & Hør produkter -->
+    <div class="wrapper hidden" id="silkeHoerWrapper">
+        <div class="shopping-cards">
+            <!-- Silke & Hør produkter -->
+            <article class="product-card">
+                <figure>
+                    <img src="image/silkoghoer/trefemto.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>35/2</h2>
+                        <p>44,00 DKK</p>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">...........</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+              <figure>
+                  <img src="image/silkoghoer/billede2.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>60/2</h2>
+                      <p>52,00 DKK</p>
+                       <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">..............</span>
+                      </div>
+                         <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="product-card">
+            <figure>
+                <img src="image/silkoghoer/sauce.webp" alt="Produkt">
+                <figcaption class="card-content">
+                    <h2>Sauce</h2>
+                    <p>59,50 DKK</p>
+                     <!-- Popup beskrivelse -->
+                    <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">23% Alpaca - 23% Merino Wool <br>
+                           <br> 27% Fine Higland Wool
+                           <br> 15% Nylon - 12% Donegal (uld)
+                           <br><br> løbelængde: ca. 150m
+                           <br> Vægt. 50g
+                           <br> Pinde. 6
+                           <br> Strikkefasthed 17m
+                          <br>  Vask: Håndvask 30° </span>
+                      </div>
+                         <!-- tilføj til kurv knap -->
+                    <button>Tilføj til kurv</button>
+                </figcaption>
+            </figure>
+        </article>
+        </div>
+    </div>
+<!---Akryl produkter--->
+    <div class="wrapper hidden" id="akrylWrapper">
+        <div class="shopping-cards">
+            <!-- Akryl produkter -->
+            <article class="product-card">
+                <figure>
+                    <img src="image/akryl/perleacryl.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Perleacryl</h2>
+                        <p>14,00 DKK</p>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">
+                                100 % acryl
+                                <br><br>220 m/ 50 g.
+                                <br>Pind 2½ - 3
+                               <br> Finvask 40 grader</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+              <figure>
+                  <img src="image/akryl/tweed-it-yourself.webp" alt="Produkt">
+                  <figcaption class="card-content">
+                      <h2>Tweed it yourself</h2>
+                      <p>38,00 DKK</p>
+                       <!-- Popup beskrivelse -->
+                      <div class="popup" onclick="myFunction(this)">Beskrivelse
+                        <span class="popuptext myPopup">
+                            Tweed it yourself <br> <br>
+                            100 % polyester <br>
+                            ca. 450 m/50 g. <br> <br>
+                            Bruges som følgetråd, - den er så tynd, at den ikke ændre strikkefastheden.</span>
+                      </div>
+                         <!-- tilføj til kurv knap -->
+                      <button>Tilføj til kurv</button>
+                  </figcaption>
+              </figure>
+          </article>
+        </div>
+    </div>
+<!-- Blandinger produkter -->
+    <div class="wrapper hidden" id="blandingerWrapper">
+        <div class="shopping-cards">
+            <!-- Blandinger produkter -->
+            <article class="product-card">
+                <figure>
+                    <img src="image/blandinger-product1.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Kommer snart</h2>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">Kommer snart</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+                <figure>
+                    <img src="image/blandinger-product1.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Kommer snart</h2>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">Kommer snart</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+                <figure>
+                    <img src="image/blandinger-product1.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Kommer snart</h2>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">Kommer snart</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="product-card">
+                <figure>
+                    <img src="image/blandinger-product1.webp" alt="Produkt">
+                    <figcaption class="card-content">
+                        <h2>Kommer snart</h2>
+                         <!-- Popup beskrivelse -->
+                        <div class="popup" onclick="myFunction(this)">Beskrivelse
+                            <span class="popuptext myPopup">Kommer snart</span>
+                          </div>
+                             <!-- tilføj til kurv knap -->
+                        <button>Tilføj til kurv</button>
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+    </div>
+ <div class="cta-container">
+        <p>Ønsker du at bruge garnalternativer?</p>
+        <p>Men finder det udfordrende at beregne garnforbruget?</p>
+        <p>Prøv vores nyeste værktøj</p>
+        <button onclick="window.location.href='garnomregner.html'">Garnomregner</button>
+    </div>
+ </main>
+ <!-- Footer HTML  -->
+ <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <a href="#">Rosenkrantzgade 31 <br>
+          8000 Aarhus C</a>
+        <p>Tlf. +45 9156 6064</p>
+        <a href="#">Mail: Garnlageret@gmail.com</a>
+        <p>CVR: 31 10 99 06</p>
+      </div>
+      <div class="footer-section">
+        <h4>Åbningstider</h4>
+        <p>Mandag: Lukket <br>
+          Tirsdag: 10.00 - 17.30 <br>
+          Onsdag: 10.00 - 17.30 <br>
+          Torsdag: 10.00 - 17.30 <br>
+          Fredag: 10.00 - 17.30 <br>
+          Lørdag: 10.00 - 13.00 <br> <br>
+          
+          Husk vi har lukket mellem jul og nytår</p>
+      </div>
+      <div class="footer-section">
+        <h4>Information</h4>
+        <a href="#">Handelsbetingelser</a>
+        <a href="#">Privat politik</a> <br>
+        <a href="#">Om Garnlageret Aarhus</a>
+      </div>
+      <div class="footer-section">
+        <h4>Produkter</h4>
+        <a href="#">Garn</a> <br>
+        <a href="#">Nyheder</a> <br>
+        <a href="#">Tilbehør</a> <br>
+      </div>
+      <div class="footer-section">
+        <h4>Følg os</h4>
+        <a href="#"><i class="fa fa-facebook"></i> Facebook</a> <br>
+        <a href="https://www.instagram.com/garnlageret.aarhus/"><i class="fa fa-instagram"></i> Instagram</a> <br>
+        <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>
